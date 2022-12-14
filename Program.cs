@@ -25,6 +25,7 @@ namespace ConsoleApp58
                 }
             } while (b != 0);
             Console.WriteLine(count);
+            Console.WriteLine("1");
             Console.ReadKey();
         }
     }
