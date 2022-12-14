@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp58
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int k1, k2, count, b;
+            Console.WriteLine("Введіть число K1");
+            k1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введіть число K2");
+            k2 = int.Parse(Console.ReadLine());
+            count = 0;
+            do
+            {
+                b = int.Parse(Console.ReadLine());
+                if (b % k1 == 0 && b % k2 != 0)
+                {
+                    count++;
+                }
+            } while (b != 0);
+            Console.WriteLine(count);
+            Console.ReadKey();
+        }
+    }
+}
